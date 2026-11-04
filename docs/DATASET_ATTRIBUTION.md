@@ -95,4 +95,11 @@ leftover from an earlier trial and is **excluded** from this repository.
 
 Dataset licences are CC BY 4.0 and belong to their publishers. This repository
 contains **no dataset images or labels** — only manifests of filenames, which
-are factual records. Code is licensed separately; see `LICENSE`.
+are factual records.
+
+The repository's own source code is licensed separately, under **AGPL-3.0**;
+see [`../LICENSE`](../LICENSE). That licence covers this repository's code
+only. It grants no rights over the datasets above, over the torchvision
+pretrained weights used for initialization, or over the trained checkpoints
+deposited on Zenodo — each is governed by its own terms, several of which are
+unresolved upstream. See [`LICENSING_AUDIT.md`](LICENSING_AUDIT.md).

@@ -307,8 +307,33 @@ Please also cite the datasets — see
 
 ## License
 
-Code: see `LICENSE`. Datasets: CC BY 4.0, belonging to their publishers. This
-repository contains no dataset images or labels, only filename manifests.
+**The original source code in this repository is licensed under the GNU
+Affero General Public License v3.0** — see [`LICENSE`](LICENSE) for the full
+text.
+
+AGPL-3.0 was chosen because the repository depends on
+[Ultralytics](https://github.com/ultralytics/ultralytics) (AGPL-3.0):
+`train_all.py` imports it at module level, so the distributed work is a
+combined work. No Ultralytics or torchvision source is copied or vendored
+here — the exposure is dependency and runtime integration only. Note
+AGPL-3.0 §13: if this code is ever deployed so that users interact with it
+over a network, they must be offered the corresponding source.
+
+**This licence covers the code in this repository and nothing else.** Four
+other things are governed separately, and AGPL-3.0 grants no rights over any
+of them:
+
+| | Governed by |
+|---|---|
+| **Third-party dependencies** (torch, torchvision, ultralytics, …) | their own licences; installed from their own sources, not redistributed here |
+| **Pretrained weights** used for initialization (torchvision COCO / ImageNet checkpoints) | **terms unstated upstream.** torchvision's documentation says its pretrained models "may have their own licenses or terms and conditions derived from the dataset used for training" |
+| **Datasets** | CC BY 4.0, belonging to their publishers. This repository contains no dataset images or labels — only filename manifests, which are factual records |
+| **Trained checkpoints** (the Zenodo deposit) | licensed separately; the deposit documents the fine-tuning as the authors' contribution and discloses the unresolved upstream status rather than asserting rights over it |
+
+Licensing this repository AGPL-3.0 **does not** grant anyone redistribution
+rights over the pretrained weights it was built from, nor over the trained
+checkpoints. Full analysis, including the unresolved items:
+[`docs/LICENSING_AUDIT.md`](docs/LICENSING_AUDIT.md).
 
 ---
 

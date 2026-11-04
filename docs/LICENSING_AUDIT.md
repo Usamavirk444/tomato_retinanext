@@ -8,9 +8,18 @@ both from what is merely common practice.
 the weights.** Seven files import Ultralytics, one of them at module level,
 and `train_all.py` monkey-patches an Ultralytics internal class. Under
 Ultralytics' stated reading of AGPL-3.0 the repository is a combined work and
-must be AGPL-3.0 to be distributed. The repository currently has **no
-`LICENSE` file at all**, while `README.md` and `docs/DATASET_ATTRIBUTION.md`
-both refer to one.
+must be AGPL-3.0 to be distributed.
+
+> **Decision taken.** The author has selected **AGPL-3.0** for the original
+> repository source code. The official GNU AGPL v3.0 text is now at
+> [`../LICENSE`](../LICENSE) (661 lines, 34,523 bytes, verbatim and
+> unmodified). `README.md` and `DATASET_ATTRIBUTION.md` have been updated to
+> point at it.
+>
+> This licence applies to **this repository's source code only**. It grants
+> no rights over third-party dependencies, the torchvision pretrained weights
+> used for initialization, the datasets, or the trained checkpoints. Those
+> are addressed in §2 and §3 and several remain unresolved upstream.
 
 ---
 
@@ -126,13 +135,21 @@ permission grant** and is not recorded here as one.
 
 ## 3. Recommendation
 
-Three different things are at stake and they do not get one answer.
+Four different things are at stake and they do not get one answer.
 
-| Layer | What it covers | Status | Recommendation |
+| Layer | What it covers | Status | Outcome |
 |---|---|---|---|
-| **Repository source code** | Everything in this repo — all original work, no copied third-party source | Needs a `LICENSE`; none exists | **AGPL-3.0**, forced by the ultralytics dependency, not by anything copied |
-| **Third-party dependencies** | ultralytics (AGPL-3.0); torch, torchvision, torchmetrics, pycocotools and the rest (permissive) | Not redistributed — installed by pip from their own sources | Nothing to license. Declare them; do not vendor them |
-| **Checkpoint redistribution** | 21 public + 3 YOLOv8n held back | Upstream weight terms **unconfirmed**; see §2 | License **your contribution** (CC BY 4.0) and disclose upstream provenance. **Do not assert a licence over the upstream weights** |
+| **Repository source code** | Everything in this repo — all original work, no copied third-party source | **Resolved** | **AGPL-3.0**, `LICENSE` in place. Forced by the ultralytics dependency, not by anything copied |
+| **Third-party dependencies** | ultralytics (AGPL-3.0); torch, torchvision, torchmetrics, pycocotools and the rest (permissive) | Not redistributed — installed by pip from their own sources | Nothing to license. Declared, not vendored |
+| **Pretrained weights** used for initialization | torchvision COCO / ImageNet checkpoints | **Unresolved upstream** — no explicit licence on the weight files; see §2 | Disclose provenance. Assert nothing |
+| **Trained checkpoints** (Zenodo) | 21 public + 3 YOLOv8n held back | Inherits the row above | License **your contribution** (CC BY 4.0) and disclose upstream status. **Do not assert a licence over the upstream weights** |
+
+**AGPL-3.0 on this repository does not propagate to the weights.** A software
+licence covers the work it is applied to; applying AGPL-3.0 to code the
+author wrote says nothing about weight files the author did not create and
+whose upstream terms are unstated. Nobody gains redistribution rights over
+torchvision's pretrained checkpoints because this repository is AGPL-3.0, and
+the deposit documentation must not be read as implying otherwise.
 
 The third row is the one to be careful about. Nothing in this audit
 establishes that torchvision's pretrained weights, or derivatives of them,
@@ -174,8 +191,9 @@ differ mainly in how much residual risk you want to carry.
 
 ### Unresolved obligations, listed honestly
 
-1. **No `LICENSE` file exists** though two documents reference one. Must be
-   fixed before the release is coherent.
+1. ~~**No `LICENSE` file exists**~~ — **resolved.** The official GNU AGPL
+   v3.0 text is at `LICENSE`, and the references in `README.md` and
+   `docs/DATASET_ATTRIBUTION.md` now resolve to it.
 2. **AGPL-3.0 §13 (network use)** obliges source provision to users
    interacting over a network. Not triggered today — this is offline research
    code — but relevant if a demo or API is ever deployed. Note that
