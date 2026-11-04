@@ -16,9 +16,12 @@ pip install -r requirements_cuda.txt      # or requirements.txt for CPU
 python scripts/verify/validate_against_paper.py
 ```
 
-Expect **50 PASS, 1 FAIL, 2 SKIP**. The FAIL is deliberate — it flags the
-known §3.3 learning-rate discrepancy. The SKIPs are the disputed S3 seed-456
-result and the on-disk dataset if you have not built it.
+Expect **50 PASS, 0 FAIL, 2 SKIP, 3 DISCREPANCY**. The three DISCREPANCY
+lines are deliberate: they record known manuscript-versus-code divergences,
+including the §3.3 learning-rate wording. They are reported separately from
+FAIL precisely so a documented divergence cannot be mistaken for a broken
+run. The SKIPs are the superseded S3 seed-456 checkpoint and the on-disk
+dataset if you have not built it.
 
 This alone confirms every published metric against the reference CSVs,
 without downloading anything.

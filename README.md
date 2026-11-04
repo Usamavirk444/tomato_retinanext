@@ -70,10 +70,25 @@ Verify:
 python -c "import torch, torchvision; print(torch.__version__, torchvision.__version__, torch.cuda.is_available())"
 ```
 
+Both files include `ultralytics==8.4.45`, which the YOLOv8n baseline needs —
+`train_all.py` imports it at module level, so it is required even for runs
+that do not touch YOLOv8n. **Ultralytics is AGPL-3.0**; see
+[`docs/LICENSING_AUDIT.md`](docs/LICENSING_AUDIT.md) before redistributing
+anything built with it.
+
 `requirements.txt` pins **torchvision 0.25.0**. This matters: the
 `giou` / `l1` box-loss default of `retinanet_resnet50_fpn_v2` is
 version-dependent and affects the S1 baseline. See
 [`docs/EVALUATION_PROTOCOLS.md`](docs/EVALUATION_PROTOCOLS.md).
+
+> **Which stack produced the published numbers.** The verified Phase D.3
+> results came from `requirements_cuda.txt` — **torch 2.6.0+cu124,
+> torchvision 0.21.0+cu124**, on an NVIDIA A100-SXM4-40GB. `requirements.txt`
+> pins newer CPU builds (torch 2.10.0, torchvision 0.25.0) for convenience on
+> machines without CUDA; results from that stack have not been verified
+> against the manuscript. Use `requirements_cuda.txt` to reproduce the
+> reported figures. Exact versions: `reports/environment_vm.txt` and
+> `reports/pip_freeze_vm.txt`.
 
 R figures additionally need R ≥ 4.2 with `tidyverse`, `patchwork`, `svglite`.
 
