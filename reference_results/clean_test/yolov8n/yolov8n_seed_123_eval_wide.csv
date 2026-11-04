@@ -1,0 +1,2 @@
+model,mAP50,mAP5095,AP_Early_Blight,Recall_Early_Blight,AP_Healthy,Recall_Healthy,AP_Late_Blight,Recall_Late_Blight,AP_Leaf_Miner,Recall_Leaf_Miner,AP_Leaf_Mold,Recall_Leaf_Mold,AP_Mosaic_Virus,Recall_Mosaic_Virus,AP_Septoria,Recall_Septoria,AP_Spider_Mites,Recall_Spider_Mites,AP_Yellow_Leaf_Curl_Virus,Recall_Yellow_Leaf_Curl_Virus
+yolov8n_seed_123,88.28,70.83,97.32,92.75,68.11,56.69,98.17,96.19,78.63,64.56,90.93,84.93,97.64,92.69,95.98,91.91,81.75,68.12,86.0,69.76

@@ -1,0 +1,2 @@
+model,mAP_50,mAP_75,mAP_50_95,mar_1,mar_10,mar_100,AP_Early_Blight,Recall_Early_Blight,AP_Healthy,Recall_Healthy,AP_Late_Blight,Recall_Late_Blight,AP_Leaf_Miners,Recall_Leaf_Miners,AP_Leaf_Mold,Recall_Leaf_Mold,AP_Mosaic_Virus,Recall_Mosaic_Virus,AP_Septoria,Recall_Septoria,AP_Spider_Mites,Recall_Spider_Mites,AP_Yellow_Leaf_Curl_Virus,Recall_Yellow_Leaf_Curl_Virus
+retinanet_convnext_baseline_seed_123,0.9418,0.8591,0.8114,0.5255,0.7799,0.845,0.9155,0.9345,0.5355,0.6424,0.9263,0.9525,0.7743,0.8013,0.8287,0.8661,0.9273,0.9432,0.9005,0.9143,0.7733,0.7944,0.721,0.7566

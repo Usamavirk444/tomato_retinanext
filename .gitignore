@@ -1,0 +1,81 @@
+# ── datasets (regenerate with scripts/data/) ────────────────────────
+# Leading slash = repository root only. A bare "data/" would also match
+# scripts/data/, which holds the dataset-preparation code and must ship.
+/data/
+!/data/.gitkeep
+
+# ── checkpoint binaries (external archive; see manifests/checkpoint_inventory.csv)
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# ── outputs: ignore everything, then re-admit the small result CSVs ──
+# Git cannot re-include a path whose parent directory is excluded, so
+# this uses "outputs/*" (excludes entries) rather than "outputs/"
+# (excludes the directory itself), which makes the negations below work.
+outputs/*
+!outputs/phase_d_gpu/
+!outputs/cross_eval_3_clean/
+!outputs/cross_eval_3_clean_corrected/
+!outputs/audit_external_overlap/
+!outputs/results_recovered/
+
+# stale partial run kept locally as provenance, not published
+outputs/cross_eval_3_clean_PREEXISTING/
+
+# stray output folder created when a script was run from inside scripts/eval/
+# with a relative path; the real results live in the top-level outputs/
+scripts/eval/outputs/
+
+# weights never leave the local archive, whatever folder they sit in
+outputs/**/*.pth
+outputs/**/*.pt
+
+# ── R ───────────────────────────────────────────────────────────────
+# The figure scripts are published (they document how each figure was
+# made); their rendered output and RStudio state are not.
+figures/R/figures/
+figures/out/
+*.Rhistory
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ── python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ── editors / OS ────────────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── local scratch ───────────────────────────────────────────────────
+tmp/
+scratch/
+*.log
+!reports/external_run.log
+
+# ── KEEP these despite the rules above ──────────────────────────────
+!manifests/**
+!reference_results/**
+!figures/source_csv/**
+!figures/architecture/*.svg
+!figures/architecture/*.drawio
+!figures/final/*.svg

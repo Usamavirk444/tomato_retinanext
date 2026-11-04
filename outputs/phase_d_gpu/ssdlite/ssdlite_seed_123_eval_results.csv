@@ -1,0 +1,2 @@
+model,mAP_50,mAP_75,mAP_50_95,mar_1,mar_10,mar_100,AP_Early_Blight,Recall_Early_Blight,AP_Healthy,Recall_Healthy,AP_Late_Blight,Recall_Late_Blight,AP_Leaf_Miners,Recall_Leaf_Miners,AP_Leaf_Mold,Recall_Leaf_Mold,AP_Mosaic_Virus,Recall_Mosaic_Virus,AP_Septoria,Recall_Septoria,AP_Spider_Mites,Recall_Spider_Mites,AP_Yellow_Leaf_Curl_Virus,Recall_Yellow_Leaf_Curl_Virus
+ssdlite_seed_123,0.8017,0.7105,0.6519,0.4931,0.6772,0.7074,0.8177,0.8648,0.2788,0.3946,0.8369,0.8788,0.5757,0.6456,0.675,0.7359,0.8283,0.8587,0.7856,0.8277,0.6054,0.6358,0.4636,0.5252

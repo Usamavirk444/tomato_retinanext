@@ -1,0 +1,11 @@
+GT \ Pred,Early Blight,Healthy,Late Blight,Leaf Miners,Leaf Mold,Mosaic Virus,Septoria,Spider Mites,YLCV,background
+Early Blight,477,0,16,2,3,0,10,0,0,23
+Healthy,1,985,5,9,9,1,0,0,0,440
+Late Blight,12,0,576,1,2,1,4,0,0,23
+Leaf Miners,0,5,2,431,0,0,2,0,0,89
+Leaf Mold,0,1,4,0,742,1,4,0,0,81
+Mosaic Virus,0,2,0,0,0,495,0,0,2,29
+Septoria,11,0,1,1,1,0,623,0,0,34
+Spider Mites,1,0,0,0,0,0,2,462,0,164
+YLCV,0,0,0,0,3,13,0,1,765,289
+background,77,529,55,147,214,67,89,60,150,0

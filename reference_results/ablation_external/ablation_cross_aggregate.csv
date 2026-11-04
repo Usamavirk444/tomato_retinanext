@@ -1,0 +1,2 @@
+model,stage,n_seeds,cross_ap50_mean,cross_ap50_std,cross_ap5095_mean,cross_ap5095_std
+retinanet_convnext_fpn_cbam,S3  ConvNeXt-T + FPN + CBAM,1,79.58,0.00,62.96,0.00

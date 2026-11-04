@@ -1,0 +1,138 @@
+experiment:
+  name: "tomato_leaf_disease_detection"
+  seeds: [42, 123, 456]
+
+# ─────────────────────────────────────────────────────────────
+# DATASET  —  Single source of truth for ALL training scripts.
+#
+#   train_all.py           → reads config["data"]["yaml"]
+#   hybrid_yolo/train.py   → reads config["data"]["yaml"]
+#   hybrid_yolo_asym/train.py → reads config["data"]["yaml"]
+#   train_vanilla.py       → reads config["data"]["*"]
+#
+# To switch datasets, change ONLY this block.
+# ─────────────────────────────────────────────────────────────
+data:
+  train_images: "data/clean_yolo_dataset/train/images"
+  train_labels: "data/clean_yolo_dataset/train/labels"
+  val_images:   "data/clean_yolo_dataset/val/images"
+  val_labels:   "data/clean_yolo_dataset/val/labels"
+  test_images:  "data/clean_test_only/test/images"
+  test_labels:  "data/clean_test_only/test/labels"
+  yaml:         "data/clean_test_only/data.yaml"
+
+  classes:
+    - "Early_Blight"           # 0
+    - "Healthy"                # 1
+    - "Late_Blight"            # 2
+    - "Leaf_Miners"            # 3
+    - "Leaf_Mold"              # 4
+    - "Mosaic_Virus"           # 5
+    - "Septoria"               # 6
+    - "Spider_Mites"           # 7
+    - "Yellow_Leaf_Curl_Virus" # 8
+
+# ─────────────────────────────────────────────────────────────
+# SHARED TRAINING DEFAULTS
+#
+# These apply to any model that does NOT override a key in its
+# own section below. Per-model overrides are standard academic
+# practice: shared dataset + preprocessing + optimizer TYPE
+# ensures valid comparison; per-architecture LR/batch/epochs
+# let each model reach its best performance fairly.
+# ─────────────────────────────────────────────────────────────
+training:
+  image_size:     [640, 640]
+  epochs:         70
+  batch_size:     8
+  patience:       20
+  optimizer:      "adamw"
+  lr:             0.0001
+  lrf:            0.01          # cosine LR final factor (lr_final = lr0 * lrf)
+  weight_decay:   0.0001
+  warmup_epochs:  5
+  scheduler:      "cosine"
+
+  # torchvision models (SSDLite, RetinaNet) include background as class 0
+  # so num_classes = 9 foreground + 1 background = 10
+  num_classes:      10          # SSDLite + RetinaNet
+  num_classes_yolo: 9           # YOLO models (no background class)
+
+# ─────────────────────────────────────────────────────────────
+# BASE MODELS  —  per-architecture hyperparameter overrides
+#
+# Each model section may define any subset of the keys from
+# training: above.  train_all.py will prefer the model-level
+# value; anything not set here falls back to training: defaults.
+# ─────────────────────────────────────────────────────────────
+models:
+
+  # 1. Lightweight single-stage — mobile-friendly
+  ssdlite:
+    name:             "ssdlite_mobilenet_v3_large"
+    checkpoints_dir:  "outputs/checkpoints/ssdlite"
+    logs_dir:         "outputs/logs/ssdlite"
+    results_dir:      "outputs/results_cleantest/ssdlite"
+    # Uses shared training: defaults (lr=0.0001, batch=16, epochs=70)
+
+  # 2. YOLOv8n — anchor-free, nano (lightest)
+  yolov8n:
+    name:             "yolov8n"
+    checkpoints_dir:  "outputs/checkpoints/yolov8n"
+    logs_dir:         "outputs/logs/yolov8n"
+    results_dir:      "outputs/results_cleantest/yolov8n"
+    # Uses shared training: defaults (lr=0.0001, batch=16, epochs=70)
+
+  # 3. YOLOv8s — anchor-free, small (one step up from nano)
+  #    lr override: 0.0005 converges faster for this model size with AdamW
+  yolov8s:
+    name:             "yolov8s"
+    checkpoints_dir:  "outputs/checkpoints/yolov8s"
+    logs_dir:         "outputs/logs/yolov8s"
+    results_dir:      "outputs/results_cleantest/yolov8s"
+    lr:               0.0005   # slightly higher — YOLOv8s benefits from faster early learning
+
+  # 4. Focal Loss baseline — designed for class imbalance
+  #    batch override: ResNet50-FPN backbone is heavier; batch=8 fits within
+  #    typical GPU budgets and matches the hybrid model batch for fairness.
+  retinanet:
+    name:             "retinanet_resnet50_fpn_v2"
+    checkpoints_dir:  "outputs/checkpoints/retinanet"
+    logs_dir:         "outputs/logs/retinanet"
+    results_dir:      "outputs/results_cleantest/retinanet"
+    batch_size:       8        # ResNet50-FPN is heavier — smaller batch
+
+  # 5. RetinaNet-Hybrid — BiFPN neck + CBAM attention on every pyramid level
+  #    Built on the WINNING baseline (RetinaNet) for a fair architectural
+  #    contribution. ALL hyperparameters identical to the retinanet baseline
+  #    so any mAP delta is attributable solely to BiFPN + CBAM.
+  retinanet_hybrid:
+    name:             "retinanet_hybrid_resnet50_bifpn_cbam"
+    checkpoints_dir:  "outputs/checkpoints/retinanet_hybrid"
+    logs_dir:         "outputs/logs/retinanet_hybrid"
+    results_dir:      "outputs/results_cleantest/retinanet_hybrid"
+    batch_size:       8        # mirrors retinanet baseline exactly
+
+# ─────────────────────────────────────────────────────────────
+# HYBRID MODEL  —  distinct architecture, separate train script
+#
+# hybrid_yolo/train.py reads DATA_YAML from this file's
+# data.yaml key and uses its own hardcoded hyperparameters
+# (lr=0.0005, batch=8, patience=25) which are documented there.
+# Minor hyperparameter adjustments for a novel architecture are
+# standard and accepted in academic research.
+# ─────────────────────────────────────────────────────────────
+hybrid:
+  yolo_cbam:
+    name:             "yolov8s_cbam"
+    checkpoints_dir:  "hybrid_yolo/outputs/checkpoints"
+    logs_dir:         "hybrid_yolo/outputs/logs"
+    # Architecture: YOLOv8s backbone + C2f_CBAM @ P3/P4/P5 + SPPF restored
+    lr:               0.0005   # slightly higher than nano baseline — CBAM init benefits
+    lrf:              0.01
+    batch_size:       8        # CBAM adds compute overhead
+    epochs:           70
+    patience:         25       # CBAM layers converge slightly slower than vanilla
+    warmup_epochs:    5
+    cls_loss_gain:    2.5      # upweight classification for rare/minority classes
+    mixup:            0.1      # mild mixup aids rare-class generalisation

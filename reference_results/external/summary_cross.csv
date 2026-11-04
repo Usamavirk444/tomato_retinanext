@@ -1,0 +1,25 @@
+model,label,seed,n_classes_in_map,excluded_classes,map50,map50_95,uncorrected_9class_map50,uncorrected_9class_map50_95,n_gt_total
+ssdlite,SSDLite-MobileNetV3,42,8,Mosaic Virus,39.3086,28.2109,34.9410,25.0764,7307
+ssdlite,SSDLite-MobileNetV3,123,8,Mosaic Virus,42.3230,29.2183,37.6204,25.9718,7307
+ssdlite,SSDLite-MobileNetV3,456,8,Mosaic Virus,35.9884,24.5856,31.9897,21.8539,7307
+yolov8n,YOLOv8n,42,8,Mosaic Virus,38.7284,26.0308,34.4253,23.1385,7307
+yolov8n,YOLOv8n,123,8,Mosaic Virus,38.9493,26.2348,34.6216,23.3199,7307
+yolov8n,YOLOv8n,456,8,Mosaic Virus,37.0682,25.7756,32.9495,22.9117,7307
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,8,Mosaic Virus,39.0099,28.4582,34.6755,25.2962,7307
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,8,Mosaic Virus,40.5768,29.6683,36.0683,26.3718,7307
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,8,Mosaic Virus,38.3508,28.3341,34.0896,25.1859,7307
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,8,Mosaic Virus,39.3913,28.8533,35.0145,25.6474,7307
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,8,Mosaic Virus,40.5695,30.3427,36.0617,26.9713,7307
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,8,Mosaic Virus,42.1476,30.6131,37.4645,27.2117,7307
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,8,Mosaic Virus,57.3826,43.0736,51.0068,38.2877,7307
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,8,Mosaic Virus,61.8163,45.9973,54.9478,40.8865,7307
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,8,Mosaic Virus,66.8416,50.3988,59.4147,44.7990,7307
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,8,Mosaic Virus,58.9011,44.5031,52.3565,39.5583,7307
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,8,Mosaic Virus,64.7133,49.3362,57.5229,43.8544,7307
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,8,Mosaic Virus,60.7279,45.2196,53.9804,40.1952,7307
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,8,Mosaic Virus,59.4257,44.3367,52.8228,39.4104,7307
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,8,Mosaic Virus,61.9416,47.0799,55.0592,41.8488,7307
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,8,Mosaic Virus,64.3065,49.0316,57.1613,43.5836,7307
+retinanet_hybrid,S5 RetinaNeXt,42,8,Mosaic Virus,63.8708,48.6526,56.7740,43.2467,7307
+retinanet_hybrid,S5 RetinaNeXt,123,8,Mosaic Virus,67.2024,52.6334,59.7354,46.7852,7307
+retinanet_hybrid,S5 RetinaNeXt,456,8,Mosaic Virus,62.9429,47.8146,55.9492,42.5019,7307

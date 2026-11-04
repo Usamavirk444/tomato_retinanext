@@ -1,0 +1,217 @@
+model,label,seed,class,n_gt,n_pred,ap50,ap50_95,precision_at_last_det,recall_at_last_det,included_in_map
+ssdlite,SSDLite-MobileNetV3,42,Early Blight,632,6367,0.460262,0.273390,0.069106,0.696203,yes
+ssdlite,SSDLite-MobileNetV3,42,Healthy,4353,40950,0.309612,0.152994,0.057705,0.542844,yes
+ssdlite,SSDLite-MobileNetV3,42,Late Blight,3,1567,0.668317,0.585149,0.001914,1.000000,yes
+ssdlite,SSDLite-MobileNetV3,42,Leaf Miners,60,13949,0.063310,0.056418,0.000717,0.166667,yes
+ssdlite,SSDLite-MobileNetV3,42,Leaf Mold,93,4497,0.705426,0.464336,0.019346,0.935484,yes
+ssdlite,SSDLite-MobileNetV3,42,Mosaic Virus,0,896,N/A,N/A,N/A,N/A,no (zero ground truth)
+ssdlite,SSDLite-MobileNetV3,42,Septoria,18,11230,0.106922,0.061190,0.001603,1.000000,yes
+ssdlite,SSDLite-MobileNetV3,42,Spider Mites,1749,16380,0.112291,0.079349,0.027839,0.260720,yes
+ssdlite,SSDLite-MobileNetV3,42,Yellow Leaf Curl Virus,399,5247,0.718551,0.584046,0.062321,0.819549,yes
+ssdlite,SSDLite-MobileNetV3,123,Early Blight,632,7336,0.504571,0.297059,0.065567,0.761076,yes
+ssdlite,SSDLite-MobileNetV3,123,Healthy,4353,44584,0.322368,0.163912,0.054302,0.556168,yes
+ssdlite,SSDLite-MobileNetV3,123,Late Blight,3,1394,0.734653,0.581089,0.002152,1.000000,yes
+ssdlite,SSDLite-MobileNetV3,123,Leaf Miners,60,9574,0.109363,0.080212,0.001044,0.166667,yes
+ssdlite,SSDLite-MobileNetV3,123,Leaf Mold,93,3786,0.703565,0.445683,0.021659,0.881720,yes
+ssdlite,SSDLite-MobileNetV3,123,Mosaic Virus,0,855,N/A,N/A,N/A,N/A,no (zero ground truth)
+ssdlite,SSDLite-MobileNetV3,123,Septoria,18,13678,0.148348,0.096504,0.001316,1.000000,yes
+ssdlite,SSDLite-MobileNetV3,123,Spider Mites,1749,15803,0.134039,0.086961,0.037461,0.338479,yes
+ssdlite,SSDLite-MobileNetV3,123,Yellow Leaf Curl Virus,399,5108,0.728931,0.586041,0.066366,0.849624,yes
+ssdlite,SSDLite-MobileNetV3,456,Early Blight,632,7228,0.475922,0.287739,0.063641,0.727848,yes
+ssdlite,SSDLite-MobileNetV3,456,Healthy,4353,42723,0.312823,0.159253,0.055755,0.547209,yes
+ssdlite,SSDLite-MobileNetV3,456,Late Blight,3,2309,0.377558,0.305787,0.001299,1.000000,yes
+ssdlite,SSDLite-MobileNetV3,456,Leaf Miners,60,8450,0.121156,0.096318,0.001538,0.216667,yes
+ssdlite,SSDLite-MobileNetV3,456,Leaf Mold,93,3252,0.679196,0.414972,0.025830,0.903226,yes
+ssdlite,SSDLite-MobileNetV3,456,Mosaic Virus,0,1219,N/A,N/A,N/A,N/A,no (zero ground truth)
+ssdlite,SSDLite-MobileNetV3,456,Septoria,18,15890,0.064496,0.031156,0.001070,0.944444,yes
+ssdlite,SSDLite-MobileNetV3,456,Spider Mites,1749,14284,0.126222,0.085346,0.038435,0.313894,yes
+ssdlite,SSDLite-MobileNetV3,456,Yellow Leaf Curl Virus,399,5861,0.721702,0.586281,0.055963,0.822055,yes
+yolov8n,YOLOv8n,42,Early Blight,632,955,0.374486,0.239591,0.349738,0.528481,yes
+yolov8n,YOLOv8n,42,Healthy,4353,12535,0.527560,0.322345,0.254966,0.734206,yes
+yolov8n,YOLOv8n,42,Late Blight,3,85,0.401980,0.324950,0.023529,0.666667,yes
+yolov8n,YOLOv8n,42,Leaf Miners,60,405,0.073613,0.070765,0.024691,0.166667,yes
+yolov8n,YOLOv8n,42,Leaf Mold,93,202,0.467891,0.328140,0.272277,0.591398,yes
+yolov8n,YOLOv8n,42,Mosaic Virus,0,84,N/A,N/A,N/A,N/A,no (zero ground truth)
+yolov8n,YOLOv8n,42,Septoria,18,2210,0.116508,0.091493,0.006335,0.777778,yes
+yolov8n,YOLOv8n,42,Spider Mites,1749,4192,0.448709,0.236626,0.278149,0.666667,yes
+yolov8n,YOLOv8n,42,Yellow Leaf Curl Virus,399,410,0.687528,0.468552,0.717073,0.736842,yes
+yolov8n,YOLOv8n,123,Early Blight,632,966,0.352932,0.218138,0.329193,0.503165,yes
+yolov8n,YOLOv8n,123,Healthy,4353,14573,0.530210,0.325004,0.223976,0.749828,yes
+yolov8n,YOLOv8n,123,Late Blight,3,102,0.391089,0.354785,0.019608,0.666667,yes
+yolov8n,YOLOv8n,123,Leaf Miners,60,347,0.040160,0.034042,0.023055,0.133333,yes
+yolov8n,YOLOv8n,123,Leaf Mold,93,180,0.495736,0.346981,0.300000,0.580645,yes
+yolov8n,YOLOv8n,123,Mosaic Virus,0,103,N/A,N/A,N/A,N/A,no (zero ground truth)
+yolov8n,YOLOv8n,123,Septoria,18,1622,0.162113,0.123064,0.009248,0.833333,yes
+yolov8n,YOLOv8n,123,Spider Mites,1749,3884,0.423340,0.217655,0.281926,0.626072,yes
+yolov8n,YOLOv8n,123,Yellow Leaf Curl Virus,399,445,0.720367,0.479118,0.687640,0.766917,yes
+yolov8n,YOLOv8n,456,Early Blight,632,977,0.376256,0.255214,0.348004,0.537975,yes
+yolov8n,YOLOv8n,456,Healthy,4353,12839,0.550269,0.342844,0.254926,0.751895,yes
+yolov8n,YOLOv8n,456,Late Blight,3,119,0.401980,0.355248,0.016807,0.666667,yes
+yolov8n,YOLOv8n,456,Leaf Miners,60,592,0.034853,0.032391,0.015203,0.150000,yes
+yolov8n,YOLOv8n,456,Leaf Mold,93,220,0.374876,0.266293,0.222727,0.526882,yes
+yolov8n,YOLOv8n,456,Mosaic Virus,0,61,N/A,N/A,N/A,N/A,no (zero ground truth)
+yolov8n,YOLOv8n,456,Septoria,18,1652,0.165945,0.116073,0.005448,0.500000,yes
+yolov8n,YOLOv8n,456,Spider Mites,1749,2989,0.408658,0.217118,0.345266,0.590051,yes
+yolov8n,YOLOv8n,456,Yellow Leaf Curl Virus,399,405,0.652617,0.476868,0.683951,0.694236,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Early Blight,632,3678,0.459360,0.294188,0.129690,0.754747,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Healthy,4353,22411,0.556586,0.334145,0.160145,0.824489,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Late Blight,3,1432,0.403819,0.371853,0.002095,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Leaf Miners,60,2966,0.197021,0.152130,0.008092,0.400000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Leaf Mold,93,1700,0.311444,0.235426,0.039412,0.720430,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Mosaic Virus,0,1687,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Septoria,18,13541,0.029239,0.017066,0.001329,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Spider Mites,1749,5947,0.431089,0.256436,0.191357,0.650658,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,Yellow Leaf Curl Virus,399,2090,0.732236,0.615411,0.157895,0.827068,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Early Blight,632,3326,0.456337,0.307396,0.141912,0.746835,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Healthy,4353,19711,0.532065,0.333508,0.169144,0.765909,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Late Blight,3,1138,0.322112,0.281056,0.002636,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Leaf Miners,60,2232,0.219482,0.150945,0.010753,0.400000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Leaf Mold,93,1319,0.461782,0.373978,0.046247,0.655914,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Mosaic Virus,0,738,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Septoria,18,17365,0.009848,0.006747,0.001037,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Spider Mites,1749,5263,0.519390,0.315491,0.225917,0.679817,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,Yellow Leaf Curl Virus,399,1609,0.725132,0.604341,0.205096,0.827068,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Early Blight,632,5127,0.473510,0.316742,0.098693,0.800633,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Healthy,4353,18160,0.523471,0.330713,0.181112,0.755571,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Late Blight,3,1712,0.244608,0.209947,0.001752,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Leaf Miners,60,3238,0.192680,0.155013,0.005868,0.316667,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Leaf Mold,93,2122,0.459784,0.354217,0.030631,0.698925,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Mosaic Virus,0,1749,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Septoria,18,15818,0.013507,0.008328,0.001138,1.000000,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Spider Mites,1749,6092,0.416035,0.257703,0.177610,0.618639,yes
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,Yellow Leaf Curl Virus,399,2096,0.744469,0.634068,0.152672,0.802005,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Early Blight,632,3501,0.440120,0.290991,0.133962,0.742089,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Healthy,4353,23679,0.558787,0.346996,0.148570,0.808178,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Late Blight,3,1129,0.297373,0.272222,0.002657,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Leaf Miners,60,3937,0.210086,0.151901,0.006096,0.400000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Leaf Mold,93,2039,0.407489,0.324544,0.026974,0.591398,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Mosaic Virus,0,1535,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Septoria,18,12014,0.037150,0.021424,0.001498,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Spider Mites,1749,5746,0.464277,0.282566,0.196310,0.644940,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,Yellow Leaf Curl Virus,399,2022,0.736020,0.617618,0.162216,0.822055,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Early Blight,632,3151,0.455905,0.307076,0.143764,0.716772,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Healthy,4353,22878,0.592796,0.371364,0.158449,0.832759,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Late Blight,3,1322,0.340347,0.327228,0.002269,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Leaf Miners,60,3520,0.149226,0.115603,0.006250,0.366667,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Leaf Mold,93,2287,0.434035,0.351296,0.029733,0.731183,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Mosaic Virus,0,1241,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Septoria,18,11861,0.029884,0.020005,0.001518,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Spider Mites,1749,7637,0.492516,0.300805,0.158963,0.694111,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,Yellow Leaf Curl Virus,399,2155,0.750848,0.634037,0.159629,0.862155,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Early Blight,632,4511,0.517066,0.337008,0.115495,0.824367,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Healthy,4353,24517,0.583506,0.359376,0.151324,0.852286,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Late Blight,3,1558,0.333333,0.285149,0.001926,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Leaf Miners,60,3346,0.184886,0.148623,0.006276,0.350000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Leaf Mold,93,2230,0.522751,0.405369,0.034529,0.827957,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Mosaic Virus,0,1779,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Septoria,18,12977,0.017329,0.010867,0.001387,1.000000,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Spider Mites,1749,7590,0.485689,0.290600,0.162714,0.706118,yes
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,Yellow Leaf Curl Virus,399,2631,0.727249,0.612060,0.128468,0.847118,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Early Blight,632,1810,0.586562,0.402852,0.263536,0.754747,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Healthy,4353,17150,0.729889,0.471614,0.224198,0.883299,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Late Blight,3,644,0.333333,0.296150,0.004658,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Leaf Miners,60,2022,0.240241,0.167352,0.012364,0.416667,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Leaf Mold,93,899,0.840205,0.684678,0.102336,0.989247,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Mosaic Virus,0,338,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Septoria,18,1662,0.245994,0.201217,0.010830,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Spider Mites,1749,5279,0.697160,0.421282,0.265959,0.802744,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,Yellow Leaf Curl Virus,399,951,0.917225,0.800747,0.400631,0.954887,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Early Blight,632,1720,0.608779,0.421645,0.283721,0.772152,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Healthy,4353,17672,0.737700,0.472672,0.220575,0.895474,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Late Blight,3,735,0.557756,0.436469,0.004082,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Leaf Miners,60,1483,0.172756,0.139505,0.016858,0.416667,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Leaf Mold,93,779,0.830931,0.672248,0.119384,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Mosaic Virus,0,340,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Septoria,18,1646,0.438135,0.342476,0.010936,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Spider Mites,1749,6059,0.698634,0.406431,0.234692,0.813036,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,Yellow Leaf Curl Virus,399,1029,0.900609,0.788335,0.362488,0.934837,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Early Blight,632,1461,0.598796,0.419720,0.322382,0.745253,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Healthy,4353,18001,0.765761,0.492871,0.217988,0.901447,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Late Blight,3,570,0.579538,0.508295,0.005263,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Leaf Miners,60,1816,0.347347,0.218131,0.015419,0.466667,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Leaf Mold,93,1051,0.792750,0.655967,0.086584,0.978495,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Mosaic Virus,0,486,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Septoria,18,1592,0.686441,0.529623,0.011307,1.000000,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Spider Mites,1749,4678,0.686296,0.415752,0.299914,0.802173,yes
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,Yellow Leaf Curl Virus,399,773,0.890395,0.791549,0.472186,0.914787,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Early Blight,632,1935,0.544919,0.370007,0.248579,0.761076,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Healthy,4353,17790,0.756319,0.487855,0.221135,0.903745,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Late Blight,3,625,0.333333,0.296150,0.004800,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Leaf Miners,60,1664,0.326024,0.235243,0.016226,0.450000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Leaf Mold,93,1094,0.838360,0.691127,0.084095,0.989247,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Mosaic Virus,0,826,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Septoria,18,2170,0.288645,0.249374,0.008295,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Spider Mites,1749,4884,0.698342,0.419520,0.290541,0.811321,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,Yellow Leaf Curl Virus,399,1104,0.926146,0.810971,0.344203,0.952381,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Early Blight,632,1837,0.590726,0.403323,0.264562,0.768987,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Healthy,4353,18616,0.770471,0.503198,0.212667,0.909488,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Late Blight,3,692,0.557756,0.475688,0.004335,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Leaf Miners,60,1107,0.239324,0.188841,0.024390,0.450000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Leaf Mold,93,1134,0.805539,0.665215,0.082011,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Mosaic Virus,0,471,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Septoria,18,1394,0.589566,0.476761,0.012912,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Spider Mites,1749,5826,0.684079,0.411788,0.241847,0.805603,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,Yellow Leaf Curl Virus,399,1135,0.939599,0.822083,0.342731,0.974937,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Early Blight,632,1773,0.551051,0.390249,0.252679,0.708861,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Healthy,4353,18078,0.781363,0.502376,0.220212,0.914542,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Late Blight,3,588,0.333333,0.280132,0.005102,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Leaf Miners,60,1590,0.310543,0.224003,0.016352,0.433333,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Leaf Mold,93,746,0.859969,0.682899,0.121984,0.978495,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Mosaic Virus,0,276,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Septoria,18,2472,0.396289,0.321223,0.007282,1.000000,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Spider Mites,1749,6305,0.701882,0.413453,0.227756,0.821041,yes
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,Yellow Leaf Curl Virus,399,1088,0.923803,0.803228,0.352022,0.959900,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Early Blight,632,1963,0.587385,0.398968,0.248090,0.770570,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Healthy,4353,18221,0.761227,0.494505,0.216838,0.907650,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Late Blight,3,572,0.417079,0.355057,0.005245,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Leaf Miners,60,874,0.342081,0.217902,0.027460,0.400000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Leaf Mold,93,991,0.818330,0.690205,0.091826,0.978495,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Mosaic Virus,0,209,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Septoria,18,2072,0.242538,0.194529,0.008687,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Spider Mites,1749,6884,0.664869,0.395736,0.201336,0.792453,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,Yellow Leaf Curl Virus,399,1169,0.920547,0.800032,0.325920,0.954887,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Early Blight,632,1729,0.604576,0.426336,0.272412,0.745253,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Healthy,4353,20145,0.787675,0.518369,0.195880,0.906501,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Late Blight,3,695,0.389439,0.365237,0.004317,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Leaf Miners,60,1250,0.274794,0.198336,0.018400,0.383333,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Leaf Mold,93,1100,0.875509,0.710419,0.084545,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Mosaic Virus,0,376,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Septoria,18,1024,0.405122,0.334171,0.017578,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Spider Mites,1749,5506,0.700262,0.411010,0.258264,0.813036,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,Yellow Leaf Curl Virus,399,1129,0.917954,0.802513,0.340124,0.962406,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Early Blight,632,2323,0.625093,0.448871,0.219974,0.808544,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Healthy,4353,17137,0.744747,0.485161,0.227286,0.894785,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Late Blight,3,638,0.557756,0.506188,0.004702,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Leaf Miners,60,1900,0.295134,0.208682,0.013684,0.433333,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Leaf Mold,93,726,0.907123,0.751247,0.128099,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Mosaic Virus,0,304,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Septoria,18,1809,0.419039,0.315885,0.009950,1.000000,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Spider Mites,1749,5076,0.687002,0.406371,0.278172,0.807318,yes
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,Yellow Leaf Curl Virus,399,1092,0.908628,0.800122,0.343407,0.939850,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Early Blight,632,2025,0.552861,0.382081,0.237531,0.761076,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Healthy,4353,17629,0.788626,0.513872,0.224857,0.910636,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Late Blight,3,602,0.557756,0.506188,0.004983,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Leaf Miners,60,699,0.423265,0.301347,0.037196,0.433333,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Leaf Mold,93,829,0.882980,0.746396,0.110977,0.989247,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Mosaic Virus,0,167,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_hybrid,S5 RetinaNeXt,42,Septoria,18,1917,0.285406,0.218483,0.009390,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Spider Mites,1749,5959,0.694498,0.406789,0.240644,0.819897,yes
+retinanet_hybrid,S5 RetinaNeXt,42,Yellow Leaf Curl Virus,399,1445,0.924271,0.817053,0.267820,0.969925,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Early Blight,632,1750,0.557452,0.390254,0.258286,0.715190,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Healthy,4353,18730,0.784465,0.510670,0.212707,0.915231,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Late Blight,3,558,0.557756,0.516722,0.005376,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Leaf Miners,60,701,0.399474,0.294564,0.037090,0.433333,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Leaf Mold,93,794,0.835825,0.721870,0.115869,0.989247,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Mosaic Virus,0,353,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_hybrid,S5 RetinaNeXt,123,Septoria,18,2483,0.640473,0.557141,0.007249,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Spider Mites,1749,5673,0.698805,0.419618,0.253305,0.821612,yes
+retinanet_hybrid,S5 RetinaNeXt,123,Yellow Leaf Curl Virus,399,894,0.901938,0.799833,0.414989,0.929825,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Early Blight,632,2024,0.618712,0.426341,0.252964,0.810127,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Healthy,4353,18107,0.783150,0.510468,0.217872,0.906272,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Late Blight,3,884,0.333333,0.296150,0.003394,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Leaf Miners,60,917,0.379063,0.268749,0.026172,0.400000,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Leaf Mold,93,873,0.887856,0.760737,0.105384,0.989247,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Mosaic Virus,0,267,N/A,N/A,N/A,N/A,no (zero ground truth)
+retinanet_hybrid,S5 RetinaNeXt,456,Septoria,18,1934,0.416801,0.339473,0.009307,1.000000,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Spider Mites,1749,5509,0.676290,0.397711,0.252314,0.794740,yes
+retinanet_hybrid,S5 RetinaNeXt,456,Yellow Leaf Curl Virus,399,1227,0.940225,0.825539,0.317033,0.974937,yes

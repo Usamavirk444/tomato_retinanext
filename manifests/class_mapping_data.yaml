@@ -1,0 +1,16 @@
+path: data/clean_yolo_dataset
+train: train/images
+val: val/images
+test: test/images
+
+nc: 9
+names:
+  0: Early_Blight
+  1: Healthy
+  2: Late_Blight
+  3: Leaf_Miners
+  4: Leaf_Mold
+  5: Mosaic_Virus
+  6: Septoria
+  7: Spider_Mites
+  8: Yellow_Leaf_Curl_Virus

@@ -1,0 +1,9 @@
+model,label,n_seeds,seeds,map50_mean,map50_sd,map50_95_mean,map50_95_sd,n_images,n_gt_boxes,classes_in_map,excluded,sd_type
+ssdlite,SSDLite-MobileNetV3,3,42;123;456,39.21,3.17,27.34,2.44,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+yolov8n,YOLOv8n,3,42;123;456,38.25,1.03,26.01,0.23,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",3,42;123;456,39.31,1.14,28.82,0.74,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),3,42;123;456,40.70,1.38,29.94,0.95,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,3,42;123;456,62.01,4.73,46.49,3.69,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,3,42;123;456,61.45,2.97,46.35,2.61,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,3,42;123;456,61.89,2.44,46.82,2.36,805,7307,8,Mosaic Virus (0 GT),sample (n-1)
+retinanet_hybrid,S5 RetinaNeXt,3,42;123;456,64.67,2.24,49.70,2.57,805,7307,8,Mosaic Virus (0 GT),sample (n-1)

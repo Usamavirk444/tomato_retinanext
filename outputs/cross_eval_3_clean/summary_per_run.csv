@@ -1,0 +1,25 @@
+model,label,seed,map50,map50_95
+ssdlite,SSDLite-MobileNetV3,42,34.9410,25.0764
+ssdlite,SSDLite-MobileNetV3,123,37.6204,25.9718
+ssdlite,SSDLite-MobileNetV3,456,31.9897,21.8539
+yolov8n,YOLOv8n,42,34.4253,23.1385
+yolov8n,YOLOv8n,123,34.6216,23.3199
+yolov8n,YOLOv8n,456,32.9495,22.9117
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",42,34.6755,25.2962
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",123,36.0683,26.3718
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",456,34.0896,25.1859
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),42,35.0145,25.6474
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),123,36.0617,26.9713
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),456,37.4645,27.2117
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,42,51.0068,38.2877
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,123,54.9478,40.8865
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,456,59.4147,44.7990
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,42,52.3565,39.5583
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,123,57.5229,43.8544
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,456,53.9804,40.1952
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,42,52.8228,39.4104
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,123,55.0592,41.8488
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,456,57.1613,43.5836
+retinanet_hybrid,S5 RetinaNeXt,42,56.7740,43.2467
+retinanet_hybrid,S5 RetinaNeXt,123,59.7354,46.7852
+retinanet_hybrid,S5 RetinaNeXt,456,55.9492,42.5019

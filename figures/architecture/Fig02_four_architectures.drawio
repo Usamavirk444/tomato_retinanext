@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" version="24.0.0">
+  <diagram name="Four architectures" id="four">
+    <mxGraphModel dx="1800" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1"
+                  arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="960"
+                  math="0" shadow="0" background="#EFF2F7">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+
+        <mxCell id="t" value="Comparative architectures for tomato leaf disease detection"
+          style="text;html=1;align=center;fontSize=24;fontStyle=1;fontColor=#1F1F1F;"
+          vertex="1" parent="1"><mxGeometry x="320" y="16" width="1000" height="36" as="geometry"/></mxCell>
+        <mxCell id="t2" value="All four trained on the same nine-class benchmark at 640 &#215; 640 input, batch size 8, AdamW, 70 epochs"
+          style="text;html=1;align=center;fontSize=13;fontColor=#555555;"
+          vertex="1" parent="1"><mxGeometry x="320" y="52" width="1000" height="22" as="geometry"/></mxCell>
+
+        <!-- ============ A. SSDLite ============ -->
+        <mxCell id="pA" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4472C4;strokeWidth=2;"
+          vertex="1" parent="1"><mxGeometry x="40" y="100" width="780" height="390" as="geometry"/></mxCell>
+        <mxCell id="pAt" value="A&#160;&#160;SSDLite with MobileNetV3-Large&#160;&#160;&#183;&#160;&#160;2.3 M parameters&#160;&#183;&#160;48.4 FPS"
+          style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F3864;"
+          vertex="1" parent="1"><mxGeometry x="60" y="112" width="740" height="26" as="geometry"/></mxCell>
+
+        <mxCell id="aIn" value="Input&#10;640&#215;640"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8C8C8C;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="66" y="250" width="86" height="76" as="geometry"/></mxCell>
+        <mxCell id="aBB" value="MobileNetV3-Large&#10;&#10;inverted residual blocks&#10;Squeeze-and-Excitation&#10;hard-swish activations"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#284879;strokeColor=#1B3254;fontColor=#FFFFFF;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="180" y="210" width="190" height="150" as="geometry"/></mxCell>
+        <mxCell id="aFM" value="Six feature scales&#10;hierarchical downsampling"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEBD4A;strokeColor=#A88A20;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="400" y="230" width="170" height="110" as="geometry"/></mxCell>
+        <mxCell id="aHD" value="SSDLite prediction heads&#10;&#10;depth-wise separable convolutions&#10;softmax over preset anchors&#10;&#8594; 9 classes"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9D9ED;strokeColor=#4472C4;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="600" y="210" width="190" height="150" as="geometry"/></mxCell>
+        <mxCell id="aN" value="Lightweight baseline: the only model here with no feature-pyramid neck"
+          style="text;html=1;align=center;fontSize=11;fontColor=#666666;fontStyle=2;"
+          vertex="1" parent="1"><mxGeometry x="60" y="430" width="740" height="20" as="geometry"/></mxCell>
+
+        <!-- ============ B. YOLOv8n ============ -->
+        <mxCell id="pB" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4472C4;strokeWidth=2;"
+          vertex="1" parent="1"><mxGeometry x="840" y="100" width="760" height="390" as="geometry"/></mxCell>
+        <mxCell id="pBt" value="B&#160;&#160;YOLOv8n&#160;&#160;&#183;&#160;&#160;3.0 M parameters&#160;&#183;&#160;83.5 FPS"
+          style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F3864;"
+          vertex="1" parent="1"><mxGeometry x="860" y="112" width="720" height="26" as="geometry"/></mxCell>
+
+        <mxCell id="bIn" value="Input&#10;640&#215;640"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8C8C8C;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="866" y="250" width="86" height="76" as="geometry"/></mxCell>
+        <mxCell id="bBB" value="CSPDarknet&#10;&#10;C2f modules: cross-stage&#10;partial bottlenecks that&#10;split and merge gradients"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#284879;strokeColor=#1B3254;fontColor=#FFFFFF;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="980" y="210" width="190" height="150" as="geometry"/></mxCell>
+        <mxCell id="bNK" value="PAN neck&#10;&#10;path-aggregation&#10;feature fusion"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEBD4A;strokeColor=#A88A20;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="1200" y="230" width="160" height="110" as="geometry"/></mxCell>
+        <mxCell id="bHD" value="Decoupled head&#10;&#10;anchor-free&#10;separate class and box branches&#10;&#8594; 9 classes"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9D9ED;strokeColor=#4472C4;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="1390" y="210" width="185" height="150" as="geometry"/></mxCell>
+        <mxCell id="bN" value="Trained through the Ultralytics pipeline, which applies mosaic, copy-paste and mixup augmentation the others do not"
+          style="text;html=1;align=center;fontSize=11;fontColor=#666666;fontStyle=2;"
+          vertex="1" parent="1"><mxGeometry x="855" y="430" width="730" height="20" as="geometry"/></mxCell>
+
+        <!-- ============ C. RetinaNet ============ -->
+        <mxCell id="pC" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4472C4;strokeWidth=2;"
+          vertex="1" parent="1"><mxGeometry x="40" y="510" width="780" height="400" as="geometry"/></mxCell>
+        <mxCell id="pCt" value="C&#160;&#160;RetinaNet-ResNet50-FPN-v2 &#8212; primary baseline&#160;&#160;&#183;&#160;&#160;36.5 M parameters&#160;&#183;&#160;32.3 FPS"
+          style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#1F3864;"
+          vertex="1" parent="1"><mxGeometry x="60" y="522" width="740" height="26" as="geometry"/></mxCell>
+
+        <mxCell id="cIn" value="Input&#10;640&#215;640"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8C8C8C;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="66" y="660" width="86" height="76" as="geometry"/></mxCell>
+        <mxCell id="cBB" value="ResNet-50&#10;&#10;3&#215;3 bottleneck blocks&#10;C3 / C4 / C5&#10;512 / 1024 / 2048 ch"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#284879;strokeColor=#1B3254;fontColor=#FFFFFF;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="180" y="620" width="190" height="150" as="geometry"/></mxCell>
+        <mxCell id="cNK" value="FPN&#10;&#10;top-down only&#10;lateral connections&#10;P3&#8211;P7, 256 ch"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEBD4A;strokeColor=#A88A20;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="400" y="630" width="170" height="130" as="geometry"/></mxCell>
+        <mxCell id="cHD" value="Shared subnets&#10;&#10;classification + box regression&#10;sigmoid focal loss&#10;&#947; = 2.0, &#945; = 0.25&#10;&#8594; 9 classes"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9D9ED;strokeColor=#4472C4;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="600" y="620" width="190" height="150" as="geometry"/></mxCell>
+        <mxCell id="cN" value="Shares its detection head, anchors and loss with RetinaNeXt, so the comparison isolates backbone, neck and attention"
+          style="text;html=1;align=center;fontSize=11;fontColor=#666666;fontStyle=2;"
+          vertex="1" parent="1"><mxGeometry x="55" y="840" width="750" height="20" as="geometry"/></mxCell>
+
+        <!-- ============ D. RetinaNeXt ============ -->
+        <mxCell id="pD" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C0504D;strokeWidth=3;"
+          vertex="1" parent="1"><mxGeometry x="840" y="510" width="760" height="400" as="geometry"/></mxCell>
+        <mxCell id="pDt" value="D&#160;&#160;RetinaNeXt &#8212; proposed&#160;&#160;&#183;&#160;&#160;35.2 M parameters&#160;&#183;&#160;26.1 FPS"
+          style="text;html=1;align=left;fontSize=15;fontStyle=1;fontColor=#8C3A38;"
+          vertex="1" parent="1"><mxGeometry x="860" y="522" width="720" height="26" as="geometry"/></mxCell>
+
+        <mxCell id="dIn" value="Input&#10;640&#215;640"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8C8C8C;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="862" y="660" width="80" height="76" as="geometry"/></mxCell>
+        <mxCell id="dBB" value="ConvNeXt-Tiny&#10;&#10;7&#215;7 depth-wise convs&#10;C3 / C4 / C5&#10;192 / 384 / 768 ch"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#284879;strokeColor=#1B3254;fontColor=#FFFFFF;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="965" y="620" width="165" height="150" as="geometry"/></mxCell>
+        <mxCell id="dNK" value="BiFPN &#215; 3&#10;&#10;bidirectional&#10;weighted fusion&#10;on C3&#8211;C5, 256 ch&#10;&#10;P6/P7 by strided conv"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEBD4A;strokeColor=#A88A20;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="1155" y="620" width="150" height="150" as="geometry"/></mxCell>
+        <mxCell id="dAT" value="CBAM&#10;&#10;channel +&#10;spatial&#10;at all five&#10;levels&#10;P3&#8211;P7"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5E8BF;strokeColor=#C9A227;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="1330" y="620" width="105" height="150" as="geometry"/></mxCell>
+        <mxCell id="dHD" value="Shared subnets&#10;&#10;identical to C&#10;&#8594; 9 classes"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9D9ED;strokeColor=#4472C4;fontSize=11;"
+          vertex="1" parent="1"><mxGeometry x="1460" y="620" width="120" height="150" as="geometry"/></mxCell>
+        <mxCell id="dN" value="Three changes against C: backbone, neck and attention. Head, anchors and loss are unchanged."
+          style="text;html=1;align=center;fontSize=11;fontColor=#8C3A38;fontStyle=2;"
+          vertex="1" parent="1"><mxGeometry x="855" y="840" width="730" height="20" as="geometry"/></mxCell>
+
+        <!-- arrows -->
+        <mxCell id="ea1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="aIn" target="aBB"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="aBB" target="aFM"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ea3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="aFM" target="aHD"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="eb1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="bIn" target="bBB"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="eb2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="bBB" target="bNK"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="eb3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="bNK" target="bHD"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="cIn" target="cBB"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="cBB" target="cNK"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ec3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#4472C4;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="cNK" target="cHD"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ed1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#C0504D;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="dIn" target="dBB"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ed2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#C0504D;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="dBB" target="dNK"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ed3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#C0504D;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="dNK" target="dAT"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ed4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#C0504D;strokeWidth=2;endArrow=block;" edge="1" parent="1" source="dAT" target="dHD"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,9 @@
+model,label,n_seeds,map50_mean,map50_sd,map50_95_mean,map50_95_sd,old_all_2396_map50
+ssdlite,SSDLite-MobileNetV3,3,34.85,2.82,24.30,2.17,56.58
+yolov8n,YOLOv8n,3,34.00,0.91,23.12,0.20,56.89
+retinanet,"S1 RetinaNet-R50-FPN-v2 (GIoU, published)",3,34.94,1.02,25.62,0.66,57.91
+retinanet_l1,S1-L1 RetinaNet-R50-FPN-v2 (L1),3,36.18,1.23,26.61,0.84,57.42
+retinanet_convnext_baseline,S2 ConvNeXt-T + FPN,3,55.12,4.21,41.32,3.28,78.47
+retinanet_convnext_fpn_cbam,S3 ConvNeXt-T + FPN + CBAM,3,54.62,2.64,41.20,2.32,79.05
+retinanet_convnext_bifpn,S4 ConvNeXt-T + BiFPN x3,3,55.01,2.17,41.61,2.10,78.98
+retinanet_hybrid,S5 RetinaNeXt,3,57.49,1.99,44.18,2.29,80.55

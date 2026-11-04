@@ -1,0 +1,90 @@
+PASS  ssdlite s42: 9 classes, no duplicates, expected names
+PASS  ssdlite s42: stored OVERALL = 9-class mean (source consistent)
+PASS  ssdlite s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  ssdlite s123: 9 classes, no duplicates, expected names
+PASS  ssdlite s123: stored OVERALL = 9-class mean (source consistent)
+PASS  ssdlite s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  ssdlite s456: 9 classes, no duplicates, expected names
+PASS  ssdlite s456: stored OVERALL = 9-class mean (source consistent)
+PASS  ssdlite s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  yolov8n s42: 9 classes, no duplicates, expected names
+PASS  yolov8n s42: stored OVERALL = 9-class mean (source consistent)
+PASS  yolov8n s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  yolov8n s123: 9 classes, no duplicates, expected names
+PASS  yolov8n s123: stored OVERALL = 9-class mean (source consistent)
+PASS  yolov8n s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  yolov8n s456: 9 classes, no duplicates, expected names
+PASS  yolov8n s456: stored OVERALL = 9-class mean (source consistent)
+PASS  yolov8n s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet s42: 9 classes, no duplicates, expected names
+PASS  retinanet s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet s123: 9 classes, no duplicates, expected names
+PASS  retinanet s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet s456: 9 classes, no duplicates, expected names
+PASS  retinanet s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_l1 s42: 9 classes, no duplicates, expected names
+PASS  retinanet_l1 s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_l1 s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_l1 s123: 9 classes, no duplicates, expected names
+PASS  retinanet_l1 s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_l1 s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_l1 s456: 9 classes, no duplicates, expected names
+PASS  retinanet_l1 s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_l1 s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_baseline s42: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_baseline s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_baseline s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_baseline s123: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_baseline s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_baseline s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_baseline s456: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_baseline s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_baseline s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_fpn_cbam s42: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_fpn_cbam s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_fpn_cbam s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_fpn_cbam s123: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_fpn_cbam s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_fpn_cbam s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_fpn_cbam s456: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_fpn_cbam s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_fpn_cbam s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_bifpn s42: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_bifpn s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_bifpn s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_bifpn s123: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_bifpn s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_bifpn s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_convnext_bifpn s456: 9 classes, no duplicates, expected names
+PASS  retinanet_convnext_bifpn s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_convnext_bifpn s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_hybrid s42: 9 classes, no duplicates, expected names
+PASS  retinanet_hybrid s42: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_hybrid s42: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_hybrid s123: 9 classes, no duplicates, expected names
+PASS  retinanet_hybrid s123: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_hybrid s123: corrected mAP50 = mean of 8 GT-positive APs
+PASS  retinanet_hybrid s456: 9 classes, no duplicates, expected names
+PASS  retinanet_hybrid s456: stored OVERALL = 9-class mean (source consistent)
+PASS  retinanet_hybrid s456: corrected mAP50 = mean of 8 GT-positive APs
+PASS  all 24 model/seed files present
+PASS  8 configurations x 3 seeds summarised
+PASS  216 per-class records, no duplicates
+PASS  identical ground truth (per-class n_gt) in every run
+PASS  total GT boxes = 7307 in every run
+PASS  Mosaic Virus has n_gt = 0 and is excluded from the mean
+PASS  8 GT-positive classes used in every run
+PASS  dataset folder yields 805 evaluable images / 7307 boxes under the evaluator's loading rule
+PASS  ssdlite: summary from 3 seed values
+PASS  yolov8n: summary from 3 seed values
+PASS  retinanet: summary from 3 seed values
+PASS  retinanet_l1: summary from 3 seed values
+PASS  retinanet_convnext_baseline: summary from 3 seed values
+PASS  retinanet_convnext_fpn_cbam: summary from 3 seed values
+PASS  retinanet_convnext_bifpn: summary from 3 seed values
+PASS  retinanet_hybrid: summary from 3 seed values
+
+88 passed, 0 failed

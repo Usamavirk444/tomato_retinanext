@@ -1,0 +1,10 @@
+class,AP50,Recall,model,seed,mAP50,mAP5095
+Early Blight,97.32,92.75,yolov8n,123,88.28,70.83
+Healthy,68.11,56.69,yolov8n,123,88.28,70.83
+Late Blight,98.17,96.19,yolov8n,123,88.28,70.83
+Leaf Miner,78.63,64.56,yolov8n,123,88.28,70.83
+Leaf Mold,90.93,84.93,yolov8n,123,88.28,70.83
+Mosaic Virus,97.64,92.69,yolov8n,123,88.28,70.83
+Septoria,95.98,91.91,yolov8n,123,88.28,70.83
+Spider Mites,81.75,68.12,yolov8n,123,88.28,70.83
+Yellow Leaf Curl Virus,86.0,69.76,yolov8n,123,88.28,70.83
